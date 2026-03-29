@@ -13,7 +13,7 @@ Supports macOS (Apple Silicon & Intel), Linux, and Windows.
 ## Usage
 
 ```sh
-# Authenticate
+# Authenticate (opens browser)
 adrenal login
 
 # Sync a folder
@@ -29,7 +29,7 @@ adrenal connections
 ## Setup
 
 1. Go to [adrenal.ai/datahub/connections/new](https://adrenal.ai/datahub/connections/new) and create a **Local Files** connection
-2. Run `adrenal login` and paste your CLI token
+2. Run `adrenal login` — your browser opens to generate a token automatically
 3. Run `adrenal sync <path>`
 
 Files are deduplicated by checksum — unchanged files are skipped on re-sync.
@@ -38,7 +38,7 @@ Files are deduplicated by checksum — unchanged files are skipped on re-sync.
 
 | Command | Description |
 |---------|-------------|
-| `adrenal login` | Authenticate with your Adrenal account |
+| `adrenal login` | Open browser to authenticate |
 | `adrenal logout` | Remove stored credentials |
 | `adrenal connections` | List your CLI connections |
 | `adrenal sync <path>` | Sync files to DataHub |
